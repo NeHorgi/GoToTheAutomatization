@@ -39,7 +39,7 @@ def extract_coordinates(coordinates):
             for coord in coords_group:
                 unic_coords.append(coord)
     collected_coords = collections.Counter(unic_coords)
-    return sorted(list(collected_coords))
+    return sorted(collected_coords)
 
 
 if __name__ == '__main__':
