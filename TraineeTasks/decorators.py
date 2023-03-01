@@ -11,9 +11,9 @@ from functools import wraps
 
 
 #functools стоит использовать потому, что она копирует всю информацию об оборачивающей функции в функцию обертку?
-def functools_timer(func):
+def functools_timer(func: Any) -> Any:
     @wraps(func)
-    def wrapper(*args, **kwargs):
+    def wrapper(*args: Any, **kwargs: Any) -> float:
         start = perf_counter()
         result = func(*args, **kwargs)
         print(perf_counter() - start)
@@ -51,5 +51,4 @@ check = [i for i in range(1, 10000)]
 
 if __name__ == '__main__':
     majorityElement(check)
-    a = majorityElement
-    print(a.__name__)
+
