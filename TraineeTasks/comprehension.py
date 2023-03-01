@@ -24,7 +24,7 @@ extract_coordinates(coords)
 import collections
 
 
-def generate_coordinates(game_time):
+def generate_coordinates(game_time: int) -> dict:
     import random
     coordinates = {}
     for second in range(game_time + 1):
@@ -32,7 +32,7 @@ def generate_coordinates(game_time):
     return coordinates
 
 
-def extract_coordinates(coordinates):
+def extract_coordinates(coordinates: dict) -> list:
     unic_coords = []
     for second in coordinates:
         for coords_group in coordinates[second]:
