@@ -11,7 +11,7 @@ get_sum(123)
 from typing import Any
 
 
-def get_sum(value) -> Any:
+def get_sum(value: Any) -> int:
 
     result = 0
 
@@ -87,7 +87,7 @@ def add_some_gold(value):
 '''
 
 
-def add_some_gold_new(value):
+def add_some_gold_new(value: int) -> str:
     check_gold = value
     need_gold = value
 
