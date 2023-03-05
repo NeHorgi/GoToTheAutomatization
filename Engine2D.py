@@ -86,7 +86,6 @@ class Engine2D:
             return None
         for obj in self.canvas:
             try:
-                canvas_figure = f'Drawing:', obj.name, obj.__repr__(), f'| {self.color} color.' if self.color else ''
                 print(f'Drawing:', obj.name, obj.__repr__(), f'| {self.color} color.' if self.color else '')
             except:
                 pass
