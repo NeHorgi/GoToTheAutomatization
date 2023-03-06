@@ -77,7 +77,7 @@ class Engine2D:
         self.color = None
         self.canvas = []
 
-    def add(self, obj):
+    def add(self, obj: Any):
         if isinstance(obj, Figure):
             self.canvas.append(obj)
 
@@ -91,7 +91,7 @@ class Engine2D:
                 pass
         self.canvas = []
 
-    def set_color(self, color):
+    def set_color(self, color: str):
         self.color = color
 
 
